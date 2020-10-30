@@ -36,22 +36,29 @@ export default function Home() {
           Hey Delphine!
         </h1>
         <p className={styles.description}>
-          Don't worry, confinement is only temporary and just a state of mind!
+          Don't worry, confinement is only temporary and 'just' a state of mind!
         </p>
         <p className={styles.description}>
-          When you feel the need to numb the pain, hit the buttons below for a source of positivity:
+          When you feel the need to numb your brain, hit the buttons below for a source of pointless rubbish.
         </p>
-          <button className={styles.card} onClick={handleQuoteClick}>
+          <button className={styles.button} onClick={handleQuoteClick}>
             <h3>WISDOM</h3>
           </button>
-          <h2>2020...{' '}{quote}</h2>
-           <button className={styles.card} onClick={handleMemeClick}>
-            <h3>MEMES</h3>
+          <div className={styles.quote}>
+            <h2>2020...{' '}{quote}</h2>
+          </div>
+          <button className={styles.button} onClick={handleMemeClick}>
+            <h3>MEME</h3>
           </button>
-          <img src={meme} alt='a meme'/>
+          <div className={styles.meme}>
+            <img src={meme} alt='a meme' />
+          </div>
       </main>
       <footer className={styles.footer}>
-          Built with {<span>❤️</span>} by Kristof
+        <>
+          <p>Beating lockdown since 2020</p>
+          <p>{<span>❤️</span>}</p> 
+        </>
       </footer>
     </div>
   )

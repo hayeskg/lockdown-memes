@@ -1,11 +1,12 @@
 import axios from 'axios';
 
 export function getMeme(){
-    return axios.get('https://api.imgflip.com/get_memes')
+    const url = "http://api.giphy.com/v1/gifs/random?tag=random&api_key=6odsC9jxfuy4jZS2n9fnPWZ1KsME8HHj";
+    return axios.get(url)
     .then(function (response) {
       // handle success
-      const random = Math.floor(Math.random()*100);
-      return response.data.data.memes[random].url;
+      const random = Math.floor(Math.random()*10);
+      return response.data.data.image_url;
     })
     .catch(function (error) {
       // handle error
