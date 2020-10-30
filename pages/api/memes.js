@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 export function getMeme(){
-    const url = `http://api.giphy.com/v1/gifs/random?tag=random&api_key=${process.env.api_key}`;
+    const url = `https://api.giphy.com/v1/gifs/random?tag=random&api_key=${process.env.api_key}`;
     return axios.get(url)
     .then(function (response) {
       // handle success
