@@ -39,7 +39,7 @@ export default function Home() {
           Don't worry, confinement is only temporary and just a state of mind!
         </p>
         <p className={styles.description}>
-          When you need feel the need to numb the pain, hit the buttons below for a source of positivity:
+          When you feel the need to numb the pain, hit the buttons below for a source of positivity:
         </p>
           <button className={styles.card} onClick={handleQuoteClick}>
             <h3>WISDOM</h3>
